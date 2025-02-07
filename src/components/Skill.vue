@@ -23,7 +23,7 @@ import { skillText } from "@/assets/constants/index";
 
 <style lang="scss">
 
-@use "@/assets/scss/mixin";
+
 
 .skill__inner {
     padding: 16px;

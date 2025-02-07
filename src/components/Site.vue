@@ -32,7 +32,7 @@ import { siteText } from '@/assets/constants';
 </template> 
 
 <style lang="scss" scoped>
-@use "@/assets/scss/mixin";
+@import "@/assets/scss/mixin";
 
 .site__inner {
     padding: 16px;
@@ -71,7 +71,7 @@ import { siteText } from '@/assets/constants';
     .site__wrap {
         .site__item {
             height: 70vh;
-            // @include flex-center;
+            @include flex-center;
             flex-direction: column;
             position: sticky;
             left: 0;

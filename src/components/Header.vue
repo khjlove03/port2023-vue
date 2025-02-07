@@ -39,19 +39,29 @@ export default {
         toggleMobileMenu() {
             this.isNavVisible = !this.isNavVisible;
         },
+        scrollLink(event) {
+            event.preventDefault();
+
+            const targetId = event.target.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        },
     },
 };
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/mixin";
+
 
 #header {
-    @include position-fixed;
+    //@include position-fixed;
     z-index: 10000;
 }
 .header__inner {
-    @include flex-between;
+    //@include flex-between;
     background-color: rgba(116, 99, 99, 0.1);
     backdrop-filter: blur(15px);
     padding: 1rem;
