@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 //setting
-@import "fonts";
-@import "vars";
-@import "reset";
-@import "mixin";
+@use "fonts.scss";
+@use "vars.scss";
+@use "reset.scss";
+@use "mixin.scss";
